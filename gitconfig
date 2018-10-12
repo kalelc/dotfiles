@@ -1,6 +1,10 @@
 [user]
 	name = Andres Colonia
 	email = andreskal@gmail.com
+[github]
+        user = kalelc
+[bitbucket]
+        user = kalelc
 [alias]
 	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 [color]
@@ -19,3 +23,8 @@
 	whitespace = red reverse
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = ~/.gitignore_global
+	editor = vim
+	filemode = false
+	trustctime = false
+	  autocrlf = input
