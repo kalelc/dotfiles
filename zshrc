@@ -30,6 +30,6 @@ SPACESHIP_PROMPT_ORDER=( time user host dir git )
 SPACESHIP_DOCKER_SHOW=false
 
 # Sourcing oh-my-zsh and other shell helpers
-source $ZSH/oh-my-zsh.sh
-source $HOME/.exports
-source $HOME/.aliases
+. $ZSH/oh-my-zsh.sh
+. $HOME/.exports
+. $HOME/.aliases
