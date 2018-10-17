@@ -22,28 +22,33 @@ diff-so-fancy is also available from NPM, Nix, brew, and as a package on Arch Li
 
 ### Install Vundle Plugin Manager
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
-#### Install Plugins
+### Install Plugins
 
 Launch vim and run `:PluginInstall`
 
 To install from command line: `vim +PluginInstall +qall`
 
-##### Golang Plugin
+#### Golang Plugin
 
-#### Install Dependencies
+##### Install Dependencies
 
 Open Vim and execute `:GoInstallBinaries`. This is a vim-go command that installs all vim-go dependencies for you.
 
-*vim 8.x is required to get best experience.
+*vim 8.x is required to get best experience.*
+
+
+---
 
 References
 
-https://github.com/so-fancy/diff-so-fancy
+- https://github.com/so-fancy/diff-so-fancy
 
-https://github.com/VundleVim/Vundle.vim
+- https://github.com/VundleVim/Vundle.vim
 
-https://github.com/fatih/vim-go
+- https://github.com/fatih/vim-go
 
-https://github.com/robbyrussell/oh-my-zsh/
+- https://github.com/robbyrussell/oh-my-zsh/
+
+---
