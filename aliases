@@ -20,6 +20,9 @@ alias berspec="bundle exec rspec"
 alias berspec-of="bundle exec rspec --only-failures"
 alias berspec-t="bundle exec rspec --tag"
 
+# Golang
+alias gofmt="gofmt -w"
+
 # Vim
 alias vi="vim -O"
 alias vim="vim -O"
