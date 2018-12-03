@@ -24,10 +24,18 @@ autocmd FileType html        setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType css         setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType javascript  setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType python      setlocal shiftwidth=4 tabstop=4 expandtab
+
 autocmd FileType go          setlocal shiftwidth=4 tabstop=4
+autocmd FileType go          nmap <leader>b  <Plug>(go-build)
+autocmd FileType go          nmap <leader>r  <Plug>(go-run)
+autocmd FileType go          nmap <leader>i  <Plug>(go-imports)
+
 autocmd FileType ruby        setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType eruby       setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType yaml        setlocal shiftwidth=2 tabstop=2 expandtab
+
+" Auto completes
+iab _email andreskal@gmail.com
 
 " ### higlights ###
 
@@ -64,7 +72,6 @@ Plugin 'vim-airline/vim-airline'
 
 " python
 Plugin 'cburroughs/pep8.py'
-Plugin 'Vimjas/vim-python-pep8-indent'
 
 " git diff higlights
 Plugin 'airblade/vim-gitgutter'
@@ -99,18 +106,27 @@ let g:go_highlight_interfaces = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_fields = 1
+let g:go_highlight_function_call = 1
 let g:go_fmt_command = "goimports"
-let g:go_fmt_fail_silently = 1
-let g:go_fmt_autosave = 0
-let g:go_play_open_browser = 0
+let g:go_fmt_fail_silently = 0
+let g:go_fmt_autosave = 1
+let g:go_play_open_browser = 1 ":Goplay
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet', 'golint']
 let g:go_metalinter_deadline = "5s"
+let g:go_addtags_transform = "camelcase"
+let g:go_play_browser_command = "chrome"
+
 
 " Reek
 let g:reek_on_loading = 0
 let g:reek_always_show = 1
+
+" React JSX
+let g:jsx_ext_required = 1
+let g:jsx_pragma_required = 1
+let g:xml_syntax_folding = 1
 
 set autowrite
 " cheat.sh
