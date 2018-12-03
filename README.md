@@ -32,6 +32,8 @@ To install from command line: `vim +PluginInstall +qall`
 
 #### Golang Plugin
 
+Install Golang https://golang.org/doc/install
+
 ##### Install Dependencies
 
 Open Vim and execute `:GoInstallBinaries`. This is a vim-go command that installs all vim-go dependencies for you.
