@@ -28,9 +28,12 @@ autocmd FileType python      setlocal shiftwidth=4 tabstop=4 expandtab
 autocmd FileType go          setlocal shiftwidth=4 tabstop=4
 autocmd FileType go          nmap <leader>b  <Plug>(go-build)
 autocmd FileType go          nmap <leader>r  <Plug>(go-run)
-autocmd FileType go          nmap <leader>i  <Plug>(go-imports)
+autocmd FileType go          nmap <leader>f  <Plug>(go-imports)
+autocmd FileType go          nmap <leader>t  <Plug>(go-test)
+autocmd FileType go          nmap <Leader>c <Plug>(go-coverage-toggle)
 
 autocmd FileType ruby        setlocal shiftwidth=2 tabstop=2 expandtab
+
 autocmd FileType eruby       setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType yaml        setlocal shiftwidth=2 tabstop=2 expandtab
 
@@ -111,13 +114,12 @@ let g:go_fmt_command = "goimports"
 let g:go_fmt_fail_silently = 0
 let g:go_fmt_autosave = 1
 let g:go_play_open_browser = 1 ":Goplay
+let g:go_addtags_transform = "camelcase"
+let g:go_play_browser_command = "chrome"
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet', 'golint']
 let g:go_metalinter_deadline = "5s"
-let g:go_addtags_transform = "camelcase"
-let g:go_play_browser_command = "chrome"
-
 
 " Reek
 let g:reek_on_loading = 0
