@@ -121,6 +121,8 @@ let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet', 'golint']
 let g:go_metalinter_deadline = "5s"
 
+set rtp+=$GOPATH/src/golang.org/x/lint/misc/vim
+
 " Reek
 let g:reek_on_loading = 0
 let g:reek_always_show = 1
