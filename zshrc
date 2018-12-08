@@ -4,9 +4,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to the oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Default Editor
-export EDITOR='vim'
-
 # ZSH theme to display.
 ZSH_THEME="robbyrussell"
 
@@ -21,9 +18,6 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # History time stamps
 HIST_STAMPS="yyyy-mm-dd"
-
-# Oh-my-zsh plugins
-plugins=( git docker cp zsh-syntax-highlighting )
 
 # Spaceship settings
 SPACESHIP_PROMPT_ORDER=( time user host dir git )
