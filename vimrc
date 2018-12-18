@@ -85,6 +85,9 @@ Plugin 'dbeniamine/cheat.sh-vim'
 " Code Smell to Ruby
 Plugin 'rainerborene/vim-reek'
 
+" Vim polyglot
+Plugin 'sheerun/vim-polyglot'
+
 call vundle#end()
 
 " syntastic plugin
@@ -126,11 +129,6 @@ set rtp+=$GOPATH/src/golang.org/x/lint/misc/vim
 " Reek
 let g:reek_on_loading = 0
 let g:reek_always_show = 1
-
-" React JSX
-let g:jsx_ext_required = 1
-let g:jsx_pragma_required = 1
-let g:xml_syntax_folding = 1
 
 set autowrite
 " cheat.sh
