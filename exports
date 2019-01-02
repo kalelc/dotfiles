@@ -16,3 +16,5 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 export GOPATH=$HOME/workspace/golang
+
+export PATH=$GOPATH/bin:$PATH
