@@ -27,3 +27,6 @@ SPACESHIP_DOCKER_SHOW=false
 . $ZSH/oh-my-zsh.sh
 . $HOME/.exports
 . $HOME/.aliases
+
+# Support to rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
