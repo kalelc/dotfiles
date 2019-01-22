@@ -13,6 +13,8 @@ set keywordprg=:help                " Command to execute with `K`
 
 syntax on
 
+colorscheme default
+
 filetype indent on
 
 " Enable filetype plugins
