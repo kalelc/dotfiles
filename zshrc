@@ -8,10 +8,10 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Enable command auto-correction.
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 # Display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="false"
 
 # Disable marking untracked files as dirty.
 DISABLE_UNTRACKED_FILES_DIRTY="true"
@@ -30,3 +30,12 @@ SPACESHIP_DOCKER_SHOW=false
 
 # Support to rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/andres/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/andres/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/andres/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/andres/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault
