@@ -10,6 +10,7 @@ set smarttab
 set showmatch
 set number
 set keywordprg=:help                " Command to execute with `K`
+set hlsearch
 
 syntax on
 
