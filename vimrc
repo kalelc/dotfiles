@@ -78,9 +78,6 @@ Plugin 'vim-airline/vim-airline'
 " git diff higlights
 Plugin 'airblade/vim-gitgutter'
 
-" Cheat.sh
-Plugin 'dbeniamine/cheat.sh-vim'
-
 " Vim polyglot
 Plugin 'sheerun/vim-polyglot'
 
@@ -119,6 +116,3 @@ let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet', 'golint']
 let g:go_metalinter_deadline = "5s"
-
-set autowrite
- cheat.sh
