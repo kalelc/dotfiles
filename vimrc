@@ -65,28 +65,21 @@ set nofoldenable                    " Don´t fold when opening files
 " ### Vundle plugins ###
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'scrooloose/syntastic'
+
+" Lint Engine
+Plugin 'w0rp/ale'
 
 " Golang
 Plugin 'fatih/vim-go'
 
-" Javascript
-Plugin 'pangloss/vim-javascript'
-
 " Bottom Status bar
 Plugin 'vim-airline/vim-airline'
-
-" python
-Plugin 'cburroughs/pep8.py'
 
 " git diff higlights
 Plugin 'airblade/vim-gitgutter'
 
 " Cheat.sh
 Plugin 'dbeniamine/cheat.sh-vim'
-
-" Code Smell to Ruby
-Plugin 'rainerborene/vim-reek'
 
 " Vim polyglot
 Plugin 'sheerun/vim-polyglot'
@@ -98,13 +91,13 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-" active to show errors
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_ruby_checkers = ['rubocop', 'mri']
-let g:syntastic_ruby_rubocop_exec = "~/.rbenv/shims/rubocop"
-let g:syntastic_ruby_exec = "~/.rbenv/shims/ruby"
-let g:syntastic_html_checkers = ['w3']
+" Ruby ALE configuratiton
+
+let g:ale_linters = { 'ruby': ['rubocop'] }
+let g:ale_linters_explicit = 1
+let g:airline#extensions#ale#enabled = 1
+let g:ale_sign_column_always = 1
+let g:ale_set_highlights = 1
 
 " golang
 let g:go_highlight_types = 1
@@ -127,19 +120,5 @@ let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet', 'golint']
 let g:go_metalinter_deadline = "5s"
 
-set rtp+=$GOPATH/src/golang.org/x/lint/misc/vim
-
-" Reek
-let g:reek_on_loading = 0
-let g:reek_always_show = 1
-
 set autowrite
-" cheat.sh
-
-let  g:CheatSheetProviders = ['syntastic', 'quickfix']
-
-" python
-let g:syntastic_python_checkers = ['pylint']
-
-" javascript
-let g:javascript_plugin_jsdoc = 1
+ cheat.sh
