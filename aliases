@@ -47,7 +47,7 @@ alias weather='curl http://wttr.in'
 alias highlight='highlight -O rtf --force -s edit-eclipse'
 
 # replace cat using highlight
-alias cat='highlight $1 --out-format xterm256 -l --force -s solarized-light'
+alias cat='highlight $1 --out-format xterm256 -l --force -s molokai'
 
 # it is the same that watch function in linux
 watch() {
