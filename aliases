@@ -24,8 +24,11 @@ alias berspec-t="bundle exec rspec --tag"
 alias gofmt="gofmt -w"
 
 # Vim
-alias vi="vim -O"
 alias vim="vim -O"
+alias vi="vim"
+
+# Docker
+alias ld='lazydocker'
 
 # Kubernetes
 alias k="kubectl"
@@ -41,6 +44,7 @@ alias psg="ps aux | grep"
 alias kill9="kill -9"
 alias ping='prettyping --nolegend'
 alias weather='curl http://wttr.in'
+highlight='highlight -O rtf'
 
 # it is the same that watch function in linux
 watch() {
