@@ -9,3 +9,7 @@ ln -sf "$DOTFILES_DIR/zshrc" ~/.zshrc
 ln -sf "$DOTFILES_DIR/exports" ~/.exports
 ln -sf "$DOTFILES_DIR/aliases" ~/.aliases
 ln -sf "$DOTFILES_DIR/vimrc" ~/.vimrc
+
+mkdir ~/.vim/colors
+
+ln -sf "$DOTFILES_DIR/colors/default.vim" ~/.vim/colors/default.vim
