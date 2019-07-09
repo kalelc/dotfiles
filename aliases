@@ -44,7 +44,10 @@ alias psg="ps aux | grep"
 alias kill9="kill -9"
 alias ping='prettyping --nolegend'
 alias weather='curl http://wttr.in'
-highlight='highlight -O rtf'
+alias highlight='highlight -O rtf'
+
+# replace cat using highlight
+alias cat='highlight $1 --out-format xterm256 -l --force -s solarized-light'
 
 # it is the same that watch function in linux
 watch() {
