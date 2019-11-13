@@ -11,6 +11,8 @@ set showmatch
 set number
 set keywordprg=:help                " Command to execute with `K`
 set hlsearch
+set undofile " Maintain undo history between sessions
+set undodir=~/.vim/undodir
 
 syntax on
 
