@@ -41,6 +41,10 @@ Open Vim and execute `:GoInstallBinaries`. This is a vim-go command that install
 *vim 8.x is required to get best experience.*
 
 
+## Pry
+
+Pry is a powerful runtime developer console and IRB alternative for Ruby.
+
 ---
 
 References
