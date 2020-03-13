@@ -77,11 +77,11 @@ Plugin 'fatih/vim-go'
 " Bottom Status bar
 Plugin 'vim-airline/vim-airline'
 
+" Syntax checking
+Plugin 'vim-syntastic/syntastic'
+
 " git diff higlights
 Plugin 'airblade/vim-gitgutter'
-
-" Vim polyglot
-Plugin 'sheerun/vim-polyglot'
 
 call vundle#end()
 
