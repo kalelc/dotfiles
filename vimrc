@@ -14,6 +14,15 @@ set hlsearch
 set undofile " Maintain undo history between sessions
 set undodir=~/.vim/undodir
 
+let mapleader = "\<Space>"
+
+" golang mappers
+autocmd FileType go          nmap <leader>b  <Plug>(go-build)
+autocmd FileType go          nmap <leader>r  <Plug>(go-run)
+autocmd FileType go          nmap <leader>f  <Plug>(go-imports)
+autocmd FileType go          nmap <leader>t  <Plug>(go-test)
+autocmd FileType go          nmap <Leader>c <Plug>(go-coverage-toggle)
+
 syntax on
 
 colorscheme default
@@ -31,12 +40,6 @@ autocmd FileType javascript  setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType python      setlocal shiftwidth=4 tabstop=4 expandtab
 
 autocmd FileType go          setlocal shiftwidth=4 tabstop=4
-autocmd FileType go          nmap <leader>b  <Plug>(go-build)
-autocmd FileType go          nmap <leader>r  <Plug>(go-run)
-autocmd FileType go          nmap <leader>f  <Plug>(go-imports)
-autocmd FileType go          nmap <leader>t  <Plug>(go-test)
-autocmd FileType go          nmap <Leader>c <Plug>(go-coverage-toggle)
-
 autocmd FileType ruby        setlocal shiftwidth=2 tabstop=2 expandtab
 
 autocmd FileType eruby       setlocal shiftwidth=2 tabstop=2 expandtab
