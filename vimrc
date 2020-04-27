@@ -16,6 +16,11 @@ set undodir=~/.vim/undodir
 
 let mapleader = "\<Space>"
 
+" tab shortcut
+:nnoremap <C-S-t> :tabnew<CR>
+:inoremap <C-S-t> <Esc>:tabnew<CR>
+:inoremap <C-S-w> <Esc>:tabclose<CR>
+
 " golang mappers
 autocmd FileType go          nmap <leader>b  <Plug>(go-build)
 autocmd FileType go          nmap <leader>r  <Plug>(go-run)
