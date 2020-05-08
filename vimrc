@@ -13,6 +13,7 @@ set keywordprg=:help                " Command to execute with `K`
 set hlsearch
 set undofile " Maintain undo history between sessions
 set undodir=~/.vim/undodir
+set autowrite
 
 let mapleader = "\<Space>"
 
@@ -20,13 +21,6 @@ let mapleader = "\<Space>"
 :nnoremap <C-S-t> :tabnew<CR>
 :inoremap <C-S-t> <Esc>:tabnew<CR>
 :inoremap <C-S-w> <Esc>:tabclose<CR>
-
-" golang mappers
-autocmd FileType go          nmap <leader>b  <Plug>(go-build)
-autocmd FileType go          nmap <leader>r  <Plug>(go-run)
-autocmd FileType go          nmap <leader>f  <Plug>(go-imports)
-autocmd FileType go          nmap <leader>t  <Plug>(go-test)
-autocmd FileType go          nmap <Leader>c <Plug>(go-coverage-toggle)
 
 syntax on
 
@@ -100,7 +94,7 @@ set statusline+=%*
 
 " Ruby ALE configuratiton
 
-let g:ale_linters = { 'ruby': ['rubocop'] }
+let g:ale_linters = { 'ruby': ['rubocop'], 'go': ['gopls'] }
 let g:ale_linters_explicit = 1
 let g:airline#extensions#ale#enabled = 1
 let g:ale_sign_column_always = 1
@@ -122,7 +116,13 @@ let g:go_fmt_autosave = 1
 let g:go_play_open_browser = 1 ":Goplay
 let g:go_addtags_transform = "camelcase"
 let g:go_play_browser_command = "chrome"
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
-let g:go_metalinter_autosave = 1
-let g:go_metalinter_autosave_enabled = ['vet', 'golint']
-let g:go_metalinter_deadline = "5s"
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+
+" golang mappers
+autocmd FileType go          nmap <leader>b  <Plug>(go-build)
+autocmd FileType go          nmap <leader>r  <Plug>(go-run)
+autocmd FileType go          nmap <leader>f  <Plug>(go-imports)
+autocmd FileType go          nmap <leader>t  <Plug>(go-test)
+autocmd FileType go          nmap <Leader>c <Plug>(go-coverage-toggle)
+autocmd FileType go          nmap <leader>a :cclose<CR>
