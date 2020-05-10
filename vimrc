@@ -22,6 +22,9 @@ let mapleader = "\<Space>"
 :inoremap <C-S-t> <Esc>:tabnew<CR>
 :inoremap <C-S-w> <Esc>:tabclose<CR>
 
+" get image code source in visual mode
+vnoremap <F5> :CarbonNowSh<CR>
+
 syntax on
 
 colorscheme default
@@ -84,6 +87,9 @@ Plugin 'vim-syntastic/syntastic'
 
 " git diff higlights
 Plugin 'airblade/vim-gitgutter'
+
+" screenshot code
+Plugin 'kristijanhusak/vim-carbon-now-sh'
 
 call vundle#end()
 
