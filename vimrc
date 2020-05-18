@@ -21,10 +21,10 @@ let mapleader = "\<Space>"
 :nnoremap <C-S-t> :tabnew<CR>
 :inoremap <C-S-t> <Esc>:tabnew<CR>
 :inoremap <C-S-w> <Esc>:tabclose<CR>
+:nnoremap H gT
+:nnoremap L gt
 
 syntax on
-
-colorscheme default
 
 filetype indent on
 
@@ -85,7 +85,14 @@ Plugin 'vim-syntastic/syntastic'
 " git diff higlights
 Plugin 'airblade/vim-gitgutter'
 
+" theme
+Plugin 'morhetz/gruvbox'
+
 call vundle#end()
+
+" configure new theme
+autocmd vimenter * colorscheme gruvbox
+set background=dark 
 
 " syntastic plugin
 set statusline+=%#warningmsg#
