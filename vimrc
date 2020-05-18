@@ -24,6 +24,9 @@ let mapleader = "\<Space>"
 :nnoremap H gT
 :nnoremap L gt
 
+" get image code source in visual mode
+vnoremap <F5> :CarbonNowSh<CR>
+
 syntax on
 
 filetype indent on
@@ -87,6 +90,9 @@ Plugin 'airblade/vim-gitgutter'
 
 " theme
 Plugin 'morhetz/gruvbox'
+
+" screenshot code
+Plugin 'kristijanhusak/vim-carbon-now-sh'
 
 call vundle#end()
 
