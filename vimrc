@@ -24,6 +24,11 @@ let mapleader = "\<Space>"
 :nnoremap H gT
 :nnoremap L gt
 
+"
+:nnoremap <Leader>w :w<CR>
+:nnoremap <Leader>wq :wq<CR>
+:nnoremap <Leader>wqa :wqa<CR>
+
 " get image code source in visual mode
 vnoremap <F5> :CarbonNowSh<CR>
 
