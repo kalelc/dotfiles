@@ -24,7 +24,7 @@ let mapleader = "\<Space>"
 :nnoremap H gT
 :nnoremap L gt
 
-"
+" basic file operation
 :nnoremap <Leader>w :w<CR>
 :nnoremap <Leader>wq :wq<CR>
 :nnoremap <Leader>wqa :wqa<CR>
