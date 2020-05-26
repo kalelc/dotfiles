@@ -30,7 +30,7 @@ let mapleader = "\<Space>"
 :nnoremap <Leader>wqa :wqa<CR>
 
 " get image code source in visual mode
-vnoremap <F5> :CarbonNowSh<CR>
+vnoremap <Leader>4 :CarbonNowSh<CR>
 
 syntax on
 
