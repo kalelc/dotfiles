@@ -45,6 +45,10 @@ Open Vim and execute `:GoInstallBinaries`. This is a vim-go command that install
 
 Pry is a powerful runtime developer console and IRB alternative for Ruby.
 
+## Other Tools
+
+https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
+
 ---
 
 References
