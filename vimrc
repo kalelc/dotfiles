@@ -14,6 +14,7 @@ set hlsearch
 set undofile " Maintain undo history between sessions
 set undodir=~/.vim/undodir
 set autowrite
+set splitright
 
 let mapleader = "\<Space>"
 
