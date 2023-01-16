@@ -19,9 +19,13 @@ set splitright
 let mapleader = "\<Space>"
 
 " tab shortcut
+"
+" open new tab
 :nnoremap <C-S-t> :tabnew<CR>
 :inoremap <C-S-t> <Esc>:tabnew<CR>
 :inoremap <C-S-w> <Esc>:tabclose<CR>
+
+" navigate between tabs H:right, L:left
 :nnoremap H gT
 :nnoremap L gt
 
