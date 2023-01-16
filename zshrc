@@ -40,6 +40,5 @@ if [ -f '/Users/andres/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
 eval "$(/opt/homebrew/bin/brew shellenv)"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-eval "$(nodenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
