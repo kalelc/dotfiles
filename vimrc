@@ -30,9 +30,9 @@ let mapleader = "\<Space>"
 :nnoremap L gt
 
 " basic file operation
-:nnoremap <Leader>w :w<CR>
-:nnoremap <Leader>wq :wq<CR>
-:nnoremap <Leader>wqa :wqa<CR>
+:nnoremap <Leader>w <Esc>:w<cr><Space>
+:nnoremap <Leader>wq <Esc>:wq<cr><Space>
+:nnoremap <Leader>wqa :wqa<cr>
 
 " get image code source in visual mode
 vnoremap <Leader>4 :CarbonNowSh<CR>
@@ -141,6 +141,7 @@ let g:go_play_open_browser = 1 ":Goplay
 let g:go_addtags_transform = "camelcase"
 let g:go_play_browser_command = "chrome"
 let g:go_def_mode='gopls'
+let g:go_echo_command_info= 1
 let g:go_info_mode='gopls'
 
 " golang mappers
