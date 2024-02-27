@@ -1,6 +1,6 @@
-# Dotfiles
+# Dotfiles for Mac
 
-## Install Zsh
+## Install Zsh (deprecated, Mac now include zsh by default)
 
 https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
 
