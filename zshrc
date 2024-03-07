@@ -27,3 +27,5 @@ complete -o nospace -C /usr/local/bin/vault vault
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+eval "$(pyenv init -)"
