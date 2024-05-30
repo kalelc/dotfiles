@@ -7,7 +7,6 @@ set nocompatible
 set smartindent
 set autoindent
 set smarttab
-set showmatch
 set number
 set keywordprg=:help                " Command to execute with `K`
 set hlsearch
@@ -92,9 +91,6 @@ Plugin 'fatih/vim-go'
 " Bottom Status bar
 Plugin 'vim-airline/vim-airline'
 
-" Syntax checking
-Plugin 'vim-syntastic/syntastic'
-
 " git diff higlights
 Plugin 'airblade/vim-gitgutter'
 
@@ -110,21 +106,21 @@ call vundle#end()
 autocmd vimenter * colorscheme gruvbox
 set background=dark 
 
-" syntastic plugin
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-" Ruby ALE configuratiton
+" configuration languages
 
 let g:ale_linters = { 'ruby': ['rubocop'], 'go': ['gopls'] }
 let g:ale_fixers = { 'ruby': ['rubocop'], 'go': ['gopls'] }
 let g:ale_fix_on_save = 1
-let g:ale_linters_explicit = 1
-let g:airline#extensions#ale#enabled = 1
-let g:ale_sign_column_always = 1
 let g:ale_set_highlights = 1
 let g:ale_completion_enabled = 1
+
+let g:ale_sign_error = 'X'
+let g:ale_sign_warning = '--'
+let g:ale_sign_column_always = 1
+let g:ale_echo_msg_error_str = 'Error'
+let g:ale_echo_msg_warning_str = 'Warning'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_virtualtext_cursor = 'current'
 
 " golang
 let g:go_highlight_types = 1
