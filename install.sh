@@ -12,6 +12,3 @@ ln -sf "$DOTFILES_DIR/vimrc" ~/.vimrc
 ln -sf "$DOTFILES_DIR/pryrc" ~/.pryrc
 
 mkdir ~/.vim
-mkdir ~/.vim/colors
-
-ln -sf "$DOTFILES_DIR/colors/default.vim" ~/.vim/colors/default.vim
