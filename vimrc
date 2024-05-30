@@ -50,7 +50,6 @@ autocmd FileType html        setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType css         setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType scss        setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType javascript  setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType python      setlocal shiftwidth=4 tabstop=4 expandtab
 
 autocmd FileType go          setlocal shiftwidth=4 tabstop=4
 autocmd FileType ruby        setlocal shiftwidth=2 tabstop=2 expandtab
@@ -125,6 +124,7 @@ let g:ale_linters_explicit = 1
 let g:airline#extensions#ale#enabled = 1
 let g:ale_sign_column_always = 1
 let g:ale_set_highlights = 1
+let g:ale_completion_enabled = 1
 
 " golang
 let g:go_highlight_types = 1
