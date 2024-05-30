@@ -12,3 +12,6 @@ ln -sf "$DOTFILES_DIR/vimrc" ~/.vimrc
 ln -sf "$DOTFILES_DIR/pryrc" ~/.pryrc
 
 mkdir ~/.vim
+mkdir ~/.vim/colors
+
+ln -sf "$DOTFILES_DIR/colors/gruvbox.vim" ~/.vim/colors/gruvbox.vim

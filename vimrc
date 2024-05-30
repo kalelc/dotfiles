@@ -2,6 +2,8 @@
 " tabstop: Number of spaces a tab counts for
 " shiftwidth: Width to shift on indent operations
 " expandtab: Use space instead of tabs in insert-mode
+set background=dark
+colorscheme gruvbox
 
 set nocompatible
 set smartindent
@@ -94,17 +96,10 @@ Plugin 'vim-airline/vim-airline'
 " git diff higlights
 Plugin 'airblade/vim-gitgutter'
 
-" theme
-Plugin 'morhetz/gruvbox'
-
 " screenshot code
 Plugin 'kristijanhusak/vim-carbon-now-sh'
 
 call vundle#end()
-
-" configure new theme
-autocmd vimenter * colorscheme gruvbox
-set background=dark 
 
 " configuration languages
 
