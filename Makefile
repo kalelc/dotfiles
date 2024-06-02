@@ -9,4 +9,5 @@ install:
 	ln -sf "$DOTFILES_DIR/pryrc" ~/.pryrc
 	mkdir ~/.vim
 	mkdir ~/.vim/colors
+	mkdir ~/.vim/undodir
 	ln -sf "$DOTFILES_DIR/colors/gruvbox.vim" ~/.vim/colors/gruvbox.vim
