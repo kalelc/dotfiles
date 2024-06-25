@@ -29,3 +29,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 eval "$(pyenv init -)"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
