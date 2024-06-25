@@ -1,13 +1,13 @@
 install:
-	DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-	ln -sf "$DOTFILES_DIR/gitconfig" ~/.gitconfig
-	ln -sf "$DOTFILES_DIR/gitignore_global" ~/.gitignore_global
-	ln -sf "$DOTFILES_DIR/zshrc" ~/.zshrc
-	ln -sf "$DOTFILES_DIR/exports" ~/.exports
-	ln -sf "$DOTFILES_DIR/aliases" ~/.aliases
-	ln -sf "$DOTFILES_DIR/vimrc" ~/.vimrc
-	ln -sf "$DOTFILES_DIR/pryrc" ~/.pryrc
+	cp "gitconfig" ~/.gitconfig
+	cp "gitignore_global" ~/.gitignore_global
+	cp "zshrc" ~/.zshrc
+	cp "exports" ~/.exports
+	cp "aliases" ~/.aliases
+	cp "vimrc" ~/.vimrc
 	mkdir ~/.vim
 	mkdir ~/.vim/colors
+	mkdir ~/.vim/syntax
 	mkdir ~/.vim/undodir
-	ln -sf "$DOTFILES_DIR/colors/gruvbox.vim" ~/.vim/colors/gruvbox.vim
+	cp "colors/gruvbox.vim" ~/.vim/colors/gruvbox.vim
+	cp "syntax/proto.vim" ~/.vim/syntax/proto.vim
