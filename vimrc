@@ -148,9 +148,6 @@ nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>l :Lines<CR>
 
 " golang mappers
-autocmd FileType go          nmap <leader>b  <Plug>(go-build)
 autocmd FileType go          nmap <leader>r  <Plug>(go-run)
-autocmd FileType go          nmap <leader>f  <Plug>(go-imports)
 autocmd FileType go          nmap <leader>t  <Plug>(go-test)
 autocmd FileType go          nmap <Leader>c <Plug>(go-coverage-toggle)
-autocmd FileType go          nmap <leader>a :cclose<CR>

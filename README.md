@@ -30,6 +30,12 @@ Launch vim and run `:PluginInstall`
 
 To install from command line: `vim +PluginInstall +qall`
 
+#### FZF
+
+Configuration to using RG with FZF, it configuration is in export file
+
+`export FZF_DEFAULT_COMMAND='rg --files --hidden -g "!dist/" -g "!pnpm-lock.yaml" -g "!.git" -g "!node_modules"'`
+
 #### Golang Plugin
 
 Install Golang https://golang.org/doc/install
@@ -48,6 +54,8 @@ Pry is a powerful runtime developer console and IRB alternative for Ruby.
 ## Other Tools
 
 https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
+
+https://github.com/BurntSushi/ripgrep
 
 ---
 
