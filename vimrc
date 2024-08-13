@@ -12,8 +12,8 @@ set smarttab
 set number
 set keywordprg=:help                " Command to execute with `K`
 set hlsearch
-set undofile " Maintain undo history between sessions
-set undodir=~/.vim/undodir
+" set undofile " Maintain undo history between sessions
+" set undodir=~/.vim/undodir
 set autowrite
 set splitright
 
@@ -99,6 +99,9 @@ Plugin 'airblade/vim-gitgutter'
 " screenshot code
 Plugin 'kristijanhusak/vim-carbon-now-sh'
 
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+
 call vundle#end()
 
 " configuration languages
@@ -137,6 +140,13 @@ let g:go_def_mode='gopls'
 let g:go_echo_command_info= 1
 let g:go_info_mode='gopls'
 
+" fz
+let g:fzf_vim = {}
+
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>l :Lines<CR>
+
 " golang mappers
 autocmd FileType go          nmap <leader>b  <Plug>(go-build)
 autocmd FileType go          nmap <leader>r  <Plug>(go-run)
@@ -144,8 +154,3 @@ autocmd FileType go          nmap <leader>f  <Plug>(go-imports)
 autocmd FileType go          nmap <leader>t  <Plug>(go-test)
 autocmd FileType go          nmap <Leader>c <Plug>(go-coverage-toggle)
 autocmd FileType go          nmap <leader>a :cclose<CR>
-
-
-augroup filetype
-  au! BufRead,BufNewFile *.proto setfiletype proto
-augroup end
