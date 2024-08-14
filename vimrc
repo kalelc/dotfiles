@@ -146,7 +146,8 @@ let g:fzf_vim = {}
 let g:fzf_action = {
     \ 'ctrl-t': 'tab split',
     \ 'ctrl-s': 'split',
-    \ 'ctrl-v': 'vsplit' }
+    \ 'ctrl-v': 'vsplit',
+    \ 'enter': 'vsplit' }
 
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>b :Buffers<CR>
