@@ -10,4 +10,5 @@ install:
 	mkdir ~/.vim/syntax
 	mkdir ~/.vim/undodir
 	cp "colors/gruvbox.vim" ~/.vim/colors/gruvbox.vim
+	cp "colors/monokai.vim" ~/.vim/colors/monokai.vim
 	cp "syntax/proto.vim" ~/.vim/syntax/proto.vim

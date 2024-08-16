@@ -3,7 +3,7 @@
 " shiftwidth: Width to shift on indent operations
 " expandtab: Use space instead of tabs in insert-mode
 set background=dark
-colorscheme gruvbox
+colorscheme monokai
 
 set nocompatible
 set smartindent
